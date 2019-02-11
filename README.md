@@ -1,6 +1,8 @@
 # 3D_wave_sim
-# Freely inspired by Ben Tommy E sketch [https://github.com/BenTommyE/3D_wave_sim]
+Freely inspired by Ben Tommy E sketch [https://github.com/BenTommyE/3D_wave_sim]
+
 Playing with 3D waves in Processing
+
 Click space to manipulate the water or stop manipulation.
 Use the mouse to look around (it's a PeasyCam)
 Click S to switch sphere/plane

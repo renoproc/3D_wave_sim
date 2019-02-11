@@ -16,9 +16,7 @@
  cause for concern.
 
  created by Quark 2018
-**/
 
-/**
  Convert a set of cartesian coordinates to spherical coordinates.
  The cartesian coordinates are about the origin [0,0,0] unless 
  another origin is specified.

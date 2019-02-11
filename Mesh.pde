@@ -1,5 +1,4 @@
 void updateMesh() {
-  // en 1er det et applique une force en fonction du voisinage
   int max = funberOfPArticles-1;
   int min = 1;
   for (int x = min; x<max; x++) {
@@ -30,7 +29,6 @@ void updateMesh() {
     }
   }
   
-  // det. l'influence du pointeur souris (influence de voisinage)
   if(waveOrNot != 0) {
     detRipple(mouseX,mouseY);
   }
@@ -65,8 +63,7 @@ void drawMesh() {
     }
   }else{// draw a sphere rather than a plane
     
-    if(lonFlag){
-      // dessin des longitudes (verticales)
+    if(lonFlag){ // draw sphere with meridians only
       for (int i = 0; i<funberOfPArticles; i++) {
         float lat = map(i, 1, funberOfPArticles,-HALF_PI, HALF_PI);
         beginShape();
@@ -83,8 +80,7 @@ void drawMesh() {
         endShape();
       }
     }    
-    if(latFlag){
-      // dessin des latitudes (horizontales)
+    if(latFlag){ // draw sphere with parallels only
       for (int j = 0; j<funberOfPArticles; j++) {
         float lon = map(j, 1, funberOfPArticles, -PI, PI);
         beginShape();
